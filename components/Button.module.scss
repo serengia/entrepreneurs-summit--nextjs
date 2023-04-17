@@ -1,0 +1,66 @@
+@use "../styles/variables.scss" as *;
+
+.btn {
+  cursor: pointer;
+  padding: 1rem 2.4rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+
+  &-primary {
+    background-color: $color-secondary;
+    border: solid 2px $color-secondary;
+    color: #fff;
+    transition: all 0.2s;
+
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+
+  &-secondary {
+    background-color: transparent;
+    border: solid 2px #fff;
+    color: #fff;
+    transition: all 0.2s;
+
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+
+  &-outline {
+    color: $color-primary;
+  }
+}
+
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding-bottom: 2px;
+    transition: all 0.2s;
+    color: $color-primary;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-secondary;
+    border-bottom: 1px solid currentColor;
+    transform: scale(1.05);
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 576px) {
+  .btn {
+    padding: 0.6rem 1.8rem;
+    border-radius: 0.3rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+}

@@ -1,0 +1,74 @@
+$color-primary: #272a31;
+$color-secondary: #ec5242;
+$color-grey-1: #d3d3d3;
+
+// Base styles
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: $color-primary;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.row {
+  width: 85% !important;
+  margin: 0 auto !important;
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) {
+  .row {
+    width: 90% !important;
+  }
+}
+
+/* UTILITIES classNameES */
+
+.m-b-s {
+  margin-bottom: 2rem !important;
+}
+
+.m-b-m {
+  margin-bottom: 3rem !important;
+}
+
+.m-b-l {
+  margin-bottom: 4rem !important;
+}
+
+.m-b-xl {
+  margin-bottom: 6rem !important;
+}
+
+.m-t-s {
+  margin-top: 2rem !important;
+}
+
+.m-t-m {
+  margin-top: 3rem !important;
+}
+
+.m-t-l {
+  margin-top: 4rem !important;
+}
+
+.m-t-xl {
+  margin-top: 6rem !important;
+}
