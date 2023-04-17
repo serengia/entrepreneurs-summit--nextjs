@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Header.module.scss";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -44,16 +45,19 @@ export default function Header() {
           </button>
           <ul className={s["nav-links"]}>
             <li className={s["nav-links-item"]}>
-              <a href="about.html">About</a>
+              <Link href={"/"}>Home</Link>
             </li>
             <li className={s["nav-links-item"]}>
-              <a href="">Program</a>
+              <Link href={"/about"}>About</Link>
             </li>
             <li className={s["nav-links-item"]}>
-              <a href="">Sponsor</a>
+              <Link href={"/program"}>Program</Link>
             </li>
             <li className={s["nav-links-item"]}>
-              <a href="">News</a>
+              <Link href={"/sponsor"}>Sponsor</Link>
+            </li>
+            <li className={s["nav-links-item"]}>
+              <Link href={"/news"}>News</Link>
             </li>
             <li className={`${s["nav-links-item"]} ${s["btn"]}`}>
               <a href="">Attend</a>

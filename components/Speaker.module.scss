@@ -1,0 +1,73 @@
+@use "../styles/variables.scss" as *;
+
+.speaker {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 8rem;
+    width: 8rem;
+    top: -2rem;
+    left: -2.5rem;
+    background-image: url("../public/img/Dotted griduser-pattern.svg");
+    background-size: contain;
+    position: absolute;
+  }
+
+  &-img {
+    display: block;
+    max-width: 16rem;
+    z-index: 200;
+  }
+
+  &-details {
+    .name {
+      font-weight: 600;
+    }
+
+    .title {
+      color: $color-secondary;
+      font-size: 1.6rem;
+      font-style: italic;
+      position: relative;
+      margin-bottom: 1rem;
+
+      &::before {
+        content: "";
+        height: 2px;
+        width: 5rem;
+        background-color: #bfbfbf;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+      }
+    }
+
+    .description {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .speaker {
+    flex-direction: column;
+    &-img {
+      max-width: 20rem;
+      // align-self: center;
+    }
+
+    &::before {
+      height: 8rem;
+      width: 8rem;
+      top: -2rem;
+      left: -2.5rem;
+      background-image: url("../public/img/Dotted griduser-pattern.svg");
+      background-size: contain;
+      position: absolute;
+    }
+  }
+}
