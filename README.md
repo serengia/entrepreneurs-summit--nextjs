@@ -16,7 +16,7 @@ npm install
 
 ## Live Demo
 
-[Live Demo Link](https://serecode-personal-portfolio-react.vercel.app/)
+[Live Demo Link](https://serecode-entrepreneurs-summit-nextjs.vercel.app/)
 
 ## Authors
 
