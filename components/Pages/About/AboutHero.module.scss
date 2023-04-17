@@ -1,0 +1,77 @@
+@use "../../../styles/variables.scss" as *;
+
+.about-hero {
+  padding: 6rem 0;
+  background-image: url("../../../public/img/main_big.png");
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.about-hero-container {
+  .description {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 6rem;
+    background-color: #fff;
+    padding: 3rem;
+    border: solid 1px #ddd;
+  }
+
+  .email-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+
+    .email-lead {
+      margin-top: 6rem;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+
+      i {
+        font-size: 1.4rem;
+        margin-bottom: -0.4rem;
+      }
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: $color-primary;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    a:hover,
+    a:active {
+      color: $color-secondary;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 576px) {
+  .email-container {
+    width: 100%;
+    a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .about-hero-container {
+    .description {
+      width: 100%;
+    }
+  }
+}

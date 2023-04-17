@@ -1,0 +1,47 @@
+@use "../../../styles/variables.scss" as *;
+
+// Mission section
+.about-mission {
+  padding: 6rem 0;
+}
+
+.mission-container {
+  width: 70%;
+  margin: 0 auto;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    height: 8rem;
+    border: solid 1px #ddd;
+    padding: 2rem;
+    box-sizing: content-box;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-container {
+    width: 70%;
+
+    .logo {
+      height: 6rem;
+      box-sizing: content-box;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .mission-container {
+    width: 80%;
+
+    .logo {
+      height: 4rem;
+      box-sizing: content-box;
+      margin-top: 2rem;
+    }
+  }
+}
