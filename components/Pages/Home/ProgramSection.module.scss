@@ -1,0 +1,53 @@
+@use "../../../styles/variables.scss" as *;
+
+// SECTION PROGRAM
+.section-program {
+  background-color: #f7f7f7;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  min-height: 40rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.programs-body {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .program {
+    background-color: rgba($color-primary, 0.85);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+    flex: 1 1 20rem;
+
+    .icon {
+      font-size: 6rem;
+      color: #fff;
+    }
+
+    h3 {
+      margin: 2rem 0 0.5rem 0;
+      color: $color-secondary;
+      line-height: 1.2;
+      font-size: 1.8rem;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.programs-footer {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  .link {
+    text-transform: uppercase;
+  }
+}

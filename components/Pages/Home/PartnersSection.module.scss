@@ -1,0 +1,25 @@
+@use "../../../styles/variables.scss" as *;
+
+// SECTION PARTNERS
+.section-partners {
+  padding: 5rem 0;
+  background-color: $color-primary;
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  img {
+    height: 4rem;
+    filter: grayscale(1);
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
