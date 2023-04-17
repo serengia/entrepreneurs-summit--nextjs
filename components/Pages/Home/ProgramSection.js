@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./ProgramSection.module.scss";
+import Link from "next/link";
 
 export default function ProgramSection() {
   return (
@@ -54,9 +55,9 @@ export default function ProgramSection() {
         </div>
       </div>
       <div className={`${s["programs-footer"]} row`}>
-        <a href="#" className="link link-outline">
+        <Link href="/program" className="link link-outline">
           See all programs &rarr;
-        </a>
+        </Link>
       </div>
     </section>
   );

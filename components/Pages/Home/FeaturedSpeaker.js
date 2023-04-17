@@ -5,6 +5,7 @@ import s from "./FeaturedSpeaker.module.scss";
 export default function FeaturedSpeaker() {
   const speakersArr = [
     {
+      id: "1",
       name: "Mike Ogalo",
       title: "Professor of Law, University of The People",
       description:
@@ -12,6 +13,7 @@ export default function FeaturedSpeaker() {
       img: "./img/users/user-2.png",
     },
     {
+      id: "2",
       name: "Loreen Moli",
       title: "Director of Moli Holdings, Nairobi Kenya",
       description:
@@ -19,6 +21,7 @@ export default function FeaturedSpeaker() {
       img: "./img/users/user-8.png",
     },
     {
+      id: "3",
       name: "Pius Gizman",
       title: "CEO and Team leader of the Gizma foundation",
       description:
@@ -26,6 +29,7 @@ export default function FeaturedSpeaker() {
       img: "./img/users/user-3.png",
     },
     {
+      id: "4",
       name: "Joyce Mine",
       title: "Director general of Alamy trust, Germany",
       description:
@@ -33,6 +37,7 @@ export default function FeaturedSpeaker() {
       img: "./img/users/user-5.png",
     },
     {
+      id: "5",
       name: "Freeman Ala",
       title: "Leadership coach and Team effectiveness ambassador",
       description:
@@ -40,6 +45,7 @@ export default function FeaturedSpeaker() {
       img: "./img/users/user-4.png",
     },
     {
+      id: "6",
       name: "James Serengia",
       title: "Senior Software Engineer at Sawabox.com, Nairobi",
       description:

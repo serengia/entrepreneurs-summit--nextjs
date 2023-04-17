@@ -55,18 +55,16 @@
       }
     }
 
-    &-item.btn {
-      padding: 0;
+    .btn {
+      color: $color-secondary;
+      border: solid 2px $color-secondary;
+      padding: 0.4rem 1.2rem;
+      background-color: transparent;
+      font-weight: 500;
+      font-size: 1.6rem;
+      border-radius: 3px;
 
-      a:link,
-      a:visited {
-        color: $color-secondary;
-        border: solid 2px $color-secondary;
-        padding: 0.4rem 1.2rem;
-      }
-
-      a:hover,
-      a:active {
+      &:hover {
         filter: brightness(0.7);
       }
     }

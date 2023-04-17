@@ -1,0 +1,14 @@
+.hero {
+  background-color: #272a31;
+  color: #fff;
+  .hero-wrapper {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      font-size: 4rem;
+    }
+  }
+}

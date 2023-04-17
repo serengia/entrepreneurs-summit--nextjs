@@ -209,3 +209,14 @@ p {
     transform: scale(1.05);
   }
 }
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #dedede;
+  margin-bottom: 1rem;
+}
+
+.active-nav-link {
+  color: #ec5242 !important;
+}

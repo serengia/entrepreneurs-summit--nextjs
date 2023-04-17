@@ -1,3 +1,4 @@
+import Program from "@/components/Pages/Program/Program";
 import Head from "next/head";
 import React from "react";
 
@@ -7,9 +8,7 @@ export default function program() {
       <Head>
         <title>Programs | Entrepreneurs Forum Summit</title>
       </Head>
-      <div className="row">
-        <h2>Programs</h2>
-      </div>
+      <Program />
     </>
   );
 }

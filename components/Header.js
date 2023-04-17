@@ -1,8 +1,10 @@
 import React from "react";
 import s from "./Header.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
   return (
     <header className={s["header"]}>
       <div className={s["header-top"]}>
@@ -45,22 +47,55 @@ export default function Header() {
           </button>
           <ul className={s["nav-links"]}>
             <li className={s["nav-links-item"]}>
-              <Link href={"/"}>Home</Link>
+              <Link
+                href={"/"}
+                className={router?.pathname === "/" ? "active-nav-link" : ""}
+              >
+                Home
+              </Link>
             </li>
             <li className={s["nav-links-item"]}>
-              <Link href={"/about"}>About</Link>
+              <Link
+                href={"/about"}
+                className={
+                  router?.pathname === "/about" ? "active-nav-link" : ""
+                }
+              >
+                About
+              </Link>
             </li>
             <li className={s["nav-links-item"]}>
-              <Link href={"/program"}>Program</Link>
+              <Link
+                href={"/program"}
+                className={
+                  router?.pathname === "/program" ? "active-nav-link" : ""
+                }
+              >
+                Program
+              </Link>
             </li>
             <li className={s["nav-links-item"]}>
-              <Link href={"/sponsor"}>Sponsor</Link>
+              <Link
+                href={"/sponsor"}
+                className={
+                  router?.pathname === "/sponsor" ? "active-nav-link" : ""
+                }
+              >
+                Sponsor
+              </Link>
             </li>
             <li className={s["nav-links-item"]}>
-              <Link href={"/news"}>News</Link>
+              <Link
+                href={"/news"}
+                className={
+                  router?.pathname === "/news" ? "active-nav-link" : ""
+                }
+              >
+                News
+              </Link>
             </li>
-            <li className={`${s["nav-links-item"]} ${s["btn"]}`}>
-              <a href="">Attend</a>
+            <li className={`${s["nav-links-item"]}`}>
+              <button className={s["btn"]}>Attend</button>
             </li>
           </ul>
         </nav>

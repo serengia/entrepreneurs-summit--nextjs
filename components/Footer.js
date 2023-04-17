@@ -4,6 +4,10 @@ import s from "./Footer.module.scss";
 export default function Footer() {
   return (
     <footer className={s["footer"]}>
+      <div className="row">
+        <hr className="divider" />
+      </div>
+
       <div className={`${s["footer-content"]} row`}>
         <img src="./img/entre-logo.png" alt="Entrepreneurs summit logo" />
         <div className={s["copyright-content"]}>
