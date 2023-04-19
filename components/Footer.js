@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Footer.module.scss";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -9,10 +10,12 @@ export default function Footer() {
       </div>
 
       <div className={`${s["footer-content"]} row`}>
-        <img src="./img/entre-logo.png" alt="Entrepreneurs summit logo" />
+        <Link href="/">
+          <img src="./img/entre-logo.png" alt="Entrepreneurs summit logo" />
+        </Link>
         <div className={s["copyright-content"]}>
           <span className={s["copyright"]}>
-            @2022 All right reserved by Entrepreneurs Summit
+            @2023 All right reserved by Entrepreneurs Summit
           </span>
           <p>
             This site is for learning purpose only. I developed this site to

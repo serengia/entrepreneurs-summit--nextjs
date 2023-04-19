@@ -119,10 +119,14 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin-left: auto;
 
   .menu-icon {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: $color-primary;
+  }
+  .menu-icon-close {
+    font-size: 2.6rem;
   }
 }
 
@@ -131,7 +135,7 @@
   .menu-button {
     align-self: stretch;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     z-index: 9;
   }
 
@@ -149,7 +153,10 @@
     }
 
     .logo {
-      display: none;
+      // display: none;
+      z-index: 15;
+      position: relative;
+      height: 4rem;
     }
   }
 
@@ -159,12 +166,10 @@
       width: 100%;
       flex-direction: column;
       gap: 5rem;
-      padding: 3rem !important;
       top: 0;
       left: 0;
 
       .nav-links {
-        visibility: hidden;
         flex-direction: column;
         position: fixed;
         background-color: rgba(255, 255, 255, 0.95);
@@ -173,8 +178,12 @@
         top: 0;
         left: 0;
         padding: 2rem;
-        padding-top: 6rem;
+        padding-top: 10rem;
         z-index: 6;
+      }
+
+      .hide-mobile-menu {
+        display: none !important;
       }
     }
   }
