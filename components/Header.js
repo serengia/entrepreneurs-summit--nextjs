@@ -14,6 +14,9 @@ export default function Header() {
             <a href="https://github.com/serengia" target="_blank">
               <i className="fa-brands fa-github"></i>
             </a>
+            <a href="https://linkedin.com/in/james-serengia" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
             <a href="https://twitter.com/JamesSerengia" target="_blank">
               <i className="fa-brands fa-twitter"></i>
             </a>
@@ -55,9 +58,6 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)}
               ></i>
             )}
-
-            {/* <i className="fa-solid fa-bars menu-icon menu-icon-open"></i>
-            <i className="fa-solid fa-xmark menu-icon menu-icon-close hidden"></i> */}
           </button>
 
           <ul
