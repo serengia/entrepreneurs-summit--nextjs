@@ -5,6 +5,8 @@ This website is for learning purpose only. I developed this site to showcase my 
 ## Built With
 
 - React
+- Next Js
+- SASS
 
 ## Getting Started
 
